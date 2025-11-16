@@ -1,0 +1,85 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="mainmaster.master.cs" Inherits="projecttest.Presentation.mainmaster" %>
+
+<!DOCTYPE html>
+
+<html>
+<link href="file:///c:\bodymechanic\projecttest\projecttest\stylesheet\MainMaster.css" rel="stylesheet" />
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+
+    <body>
+  <form id="form1" runat="server">
+    <header class="site-header">
+      <h1>ABC Inc</h1>
+    </header>
+    <div class="container">
+      <nav class="sidebar">
+        <ul>
+          <li><a href="Default/Default.aspx">Home</a></li>
+          <li><a href="Default/Default.aspx">About</a></li>
+          <li><a href="Default/Default.aspx">Services</a></li>
+          <li><a href="Default/Default.aspx">Gallery</a></li>
+          <li><a href="Default/Default.aspx">Contact</a></li>
+        </ul>
+      </nav>
+      <main class="main-content">
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" />
+      </main>
+    </div>
+    <footer class="site-footer">
+      &copy; 2016 ABC Inc
+    </footer>
+  </form>
+</body>
+
+<%--<body>
+    <form id="form1" runat="server">
+        <div>
+            <table style="width:1024px;">
+                <tr style="height:100px;">
+                    <td heigth="100px">ABC Inc</td>
+                </tr>
+                <tr>
+                    <td width="200px" align="top">
+                        <ul>
+                            <li>
+                                <a href="Default/Default.aspx">Home</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="Default/Default.aspx">About</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="Default/Default.aspx">Services</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="Default/Default.aspx">Gallery</a>
+                            </li>
+                        </ul>
+                        <ul>
+                            <li>
+                                <a href="Default/Default.aspx">Contact</a>
+                            </li>
+                        </ul>
+                    </td>
+                    <td width="1024px" height="1024px">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </td>
+                </tr> 
+                <tr>
+                    <td>Copy right &copy 2016</td>
+                </tr>
+            </table>
+        </div>
+    </form>
+</body>--%>
+</html>

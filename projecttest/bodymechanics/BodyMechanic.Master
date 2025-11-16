@@ -1,0 +1,169 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="BodyMechanic.Master.cs"
+    Inherits="projecttest.bodymechanics.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Decorating  a Interior Category  Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="Decorating Responsive web template, Bootstrap Web Templates, Flat Web Templates,
+        Android Compatible web template, 
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+    <script type="applisalonion/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <!-- Custom Theme files -->
+    <link href="css/iconeffects.css" rel='stylesheet' type='text/css' />
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/bootstrap.js"> </script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <!--/web-font-->
+    <link href='//fonts.googleapis.com/css?family=Ubuntu:400,300italic,300,500,400italic,500italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Merriweather+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <!--/script-->
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({ scrollTop: $(this.hash).offset().top }, 900);
+            });
+        });
+    </script>
+    <!-- swipe box js -->
+
+    <!-- //swipe box js -->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+
+            <div class="banner w3l" id="home">
+                <div class="header-bottom">
+                    <div class="container">
+                        <div class="fixed-header">
+                            <!--logo-->
+                            <div class="logo wow fadeInLeft animated animated" data-wow-delay=".5s"
+                                style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInLeft;">
+                                <a href="index.html">
+                                    <h1>Body Mechanic</h1>
+                                </a>
+                            </div>
+                            <!--//logo-->
+                            <div class="top-menu wow fadeInRight animated animated"
+                                data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInRight;">
+                                <span class="menu"></span>
+                                <nav class="link-effect-4" id="link-effect-4">
+                                    <ul>
+                                        <li class="active"><a data-hover="Home" href="Homeguest.aspx">Home</a></li>
+                                        
+                                        <li><a data-hover="About" href="#about" class="scroll">About</a></li>
+                                        <li><a data-hover="Gallery" href="#gallery" class="scroll">Gallery</a></li>
+                                        <li><a data-hover="Contact" href="#contact" class="scroll">Contact</a></li>                                        
+                                        <li><a data-hover="Login" href="../Presentation/Login/Login.aspx" >Login</a></li>
+                                    </ul>
+                                </nav>
+                            </div>
+                            <!-- script-for-menu -->
+                            <script>
+                                $("span.menu").click(function () {
+                                    $(".top-menu ul").slideToggle("slow", function () {
+                                    });
+                                });
+                            </script>
+                            <!-- script-for-menu -->
+
+                            <div class="clearfix"></div>
+                            <script>
+                                $(document).ready(function () {
+                                    var navoffeset = $(".header-bottom").offset().top;
+                                    $(window).scroll(function () {
+                                        var scrollpos = $(window).scrollTop();
+                                        if (scrollpos >= navoffeset) {
+                                            $(".header-bottom").addClass("fixed");
+                                        } else {
+                                            $(".header-bottom").removeClass("fixed");
+                                        }
+                                    });
+
+                                });
+                            </script>
+                        </div>
+                    </div>
+                </div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </div>
+    </form>
+    <!--footer-->
+    <div class="footer">
+        <div class="footer-info">
+            <div class="container">
+                <div class="icons wow fadeInUp animated animated" data-wow-delay=".5s" style="visibility: visible; animation-delay: 0.5s; animation-name: fadeInUp;">
+                    <ul>
+                        <li><a href="https://www.facebook.com/share/16iMs4SLRm/" data-toggle="tooltip" data-placement="top" title=""
+                            data-original-title="Facebook">
+                            <img src="images/i1.png" alt=""></a></li>
+
+
+                        
+                        <li><a href="https://www.instagram.com/body__mechanic?igsh=NGMyZWR0MXdranF4" data-toggle="tooltip" data-placement="top" title=""
+                            data-original-title="Instagram">
+                            <img src="images/i7.png" alt=""></a></li>
+
+
+
+                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Twitter">
+                            <img src="images/i2.png" alt="">
+                        </a></li>
+                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="Google+">
+                            <img src="images/i3.png" alt=""></a></li>
+                        <li><a href="#" data-toggle="tooltip" data-placement="top" title="" data-original-title="LinkedIn">
+                            <img src="images/i4.png" alt="">
+                        </a></li> 
+                    </ul>
+                    <script>$(function () {
+                            $('[data-toggle="tooltip"]').tooltip()
+                        })</script>
+                </div>
+                <p>© 2016 Body Mechanic . All rights reserved | Design by <a href="http://w3layouts.com">Pixen Solution</a></p>
+                <br />
+               <%-- <p><a href="../Presentation/Login/Login.aspx" style="color: white; text-align: center">ADMIN</a></p>--%>
+            </div>
+        </div>
+    </div>
+    <!--/footer-->
+    <!--start-smooth-scrolling-->
+    <script type="text/javascript">
+        $(document).ready(function () {
+            /*
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear' 
+            };
+            */
+
+            $().UItoTop({ easingType: 'easeOutQuart' });
+
+        });
+    </script>
+    <!--end-smooth-scrolling-->
+    <a href="#home" id="toTop" class="scroll" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+    <!-- animation-effect -->
+    <link href="css/animate.min.css" rel="stylesheet">
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+    <!-- //animation-effect -->
+</body>
+>
+</html>
